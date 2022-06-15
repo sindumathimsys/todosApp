@@ -58,9 +58,9 @@ export default function AddTodos(): JSX.Element {
             Delete All
           </div>
         )}
-        {todosList.map((todo) => {
+        {todosList.map((todo,index) => {
           return (
-            <div>
+            <div key={`todo_${index}`}>
               <span style={{ width: "600px" }}> {todo.activity}</span>
               <span
                 style={{ color: "#1769aa", marginLeft: 10, cursor: "pointer" }}
